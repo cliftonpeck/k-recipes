@@ -1,0 +1,150 @@
+@font-face {
+  font-family: pushter;
+  src: url("/fonts/pushter.ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7faeb;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  padding-left: 10px;
+  font-family: pushter;
+  color: #d84501;
+  margin-right: 20px;
+  display: block;
+  float: left;
+}
+.menu-button {
+  background: none;
+  border: none;
+  padding: 7px;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+header {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  white-space: nowrap;
+  width: 100%;
+  height: 55px;
+}
+.header-shadow {
+  width: 100%;
+  height: 10px;
+  background: rgb(247, 250, 235);
+  background: linear-gradient(
+    0deg,
+    rgba(247, 250, 235, 1) 0%,
+    rgba(199, 201, 189, 1) 100%
+  );
+  position: relative;
+}
+header a {
+  display: block;
+  float: right;
+  padding: 10px;
+  margin-top: 9px;
+  text-decoration: none;
+  color: #101010;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header-registration svg {
+  display: block;
+  float: right;
+  margin-top: 10px;
+}
+.search-bar {
+  margin-left: 20px;
+}
+.search-input {
+  padding: 15px;
+  width: calc(100% - 120px);
+  border: 1px solid rgb(219, 219, 219);
+  font-size: 1rem;
+  margin-left: 15px;
+  margin-top: 5px;
+  float: left;
+}
+.search-button {
+  border: none;
+  background-color: #d84501;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.home-recipes {
+  margin: 15px;
+}
+.home-recipe {
+  display: inline-block;
+  font-size: 22px;
+  word-wrap: break-word;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 316px;
+  height: auto;
+  margin: 16px;
+}
+.home-recipe-large {
+  display: inline-block;
+  font-size: 32px;
+  word-wrap: break-word;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 640px;
+  height: auto;
+  margin: 16px;
+}
+.home-recipe-large img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 375px) {
+  .header-vertical-line {
+    display: none;
+  }
+  .header-registration svg {
+    display: none;
+  }
+  .login-link {
+    position: absolute;
+    right: 0;
+  }
+  .join-now-link {
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
+  }
+  .home-recipe {
+    width: 130px;
+    margin-right: 0;
+    font-size: 30px;
+  }
+  .home-recipe img {
+    width: 130px;
+  }
+  .home-recipe-large {
+    width: 130px;
+  }
+  .home-recipe-large img {
+    width: 130px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home-recipe-large {
+    display: inline-block;
+    font-size: 22px;
+    word-wrap: break-word;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    width: 316px;
+    height: auto;
+    margin: 16px;
+  }
+}
